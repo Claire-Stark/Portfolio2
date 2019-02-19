@@ -1,12 +1,12 @@
 $(function(){
-	$('#home_page').hide();
+	$('#home-page').hide();
 
 	$(".typed").typed({
-		strings: ["Hi, I'm Claire", "Welcome to my portfolio website.", "Let's check it out!"],
+		strings: ["Hello World, I'm Claire", "This is my work"],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed
-		typeSpeed: 30,
+		typeSpeed: 50,
 		// time before typing starts
 		startDelay: 1200,
 		// backspacing speed
@@ -27,8 +27,8 @@ $(function(){
 		contentType: 'html',
 		// call when done callback function
 		callback: function() {
-			$('#loading_page').delay(3500).fadeOut(1000);
-			$('#home_page').show(5000).fadeIn(3000);
+			$('#loading-page').delay(3500).fadeOut(1000);
+			$('#home-page').show(5000).fadeIn(3000);
 		},
 		// starting callback function before each string
 		preStringTyped: function() {},
